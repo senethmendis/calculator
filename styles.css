@@ -1,0 +1,111 @@
+@import url("https://fonts.googleapis.com/css?family=Space+Mono");
+
+/* quick reset so all our padding is the right size */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.calculator {
+  max-width: 320px;
+  border: 1px solid rgb(255, 255, 255, 0.3);
+  padding: 1rem;
+  border-radius: 1rem;
+  background: rgba(0, 0, 0, 0.5);
+}
+.calculator-buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  border: 0;
+  gap: 0.5rem;
+  padding: 0.5rem 0;
+
+  backdrop-filter: blur(16px);
+}
+.calc-numbers {
+  font-family: "Space Mono", serif;
+  background: rgba(0, 0, 0, 0);
+  color: white;
+  font-size: 2.5em;
+  border: 0;
+  padding: 0.3em;
+  text-align: right;
+  width: 100%;
+  height: 100px;
+  outline: none;
+}
+.span-2 {
+  grid-column: span 2;
+}
+.span-3 {
+  grid-column: span 3;
+}
+.btn {
+  font-size: 1em;
+  height: 65px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 1rem;
+  color: #fff;
+  background: rgba(24, 24, 24, 0.1);
+  background: radial-gradient(
+    circle,
+    rgba(24, 24, 24, 1) 0%,
+    rgba(10, 10, 10, 1) 100%
+  );
+  font-size: 1.2em;
+}
+.btn:hover {
+  background: rgb(255, 166, 11);
+  background: radial-gradient(
+    circle,
+    rgba(255, 166, 11, 1) 0%,
+    rgba(255, 113, 22, 1) 100%
+  );
+}
+.orange {
+  background: rgb(255, 166, 11);
+  background: radial-gradient(
+    circle,
+    rgba(255, 166, 11, 1) 0%,
+    rgba(255, 113, 22, 1) 100%
+  );
+}
+
+.orange:hover {
+  background: rgb(255, 166, 11);
+  background: radial-gradient(
+    circle,
+    rgb(255, 88, 11) 0%,
+    rgb(250, 122, 36) 100%
+  );
+}
+
+.container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  position: relative;
+}
+
+.aqua__gradient {
+  right: 0;
+  top: 20rem;
+  bottom: 0;
+  left: 0;
+  position: absolute;
+  margin: auto;
+  z-index: -50;
+  width: 40%;
+  height: 40%;
+  background: linear-gradient(180deg, rgba(188, 165, 255, 0) 0%, #ffa86e 100%);
+  filter: blur(123px);
+}
